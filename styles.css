@@ -1,0 +1,23 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+td {
+  border: 1px solid #ec9770;
+  padding: 10px;
+  background-color: #15959f;
+}
+table {
+  border-spacing: 0px;
+}
+td.currentCell {
+  background-color: #133046;
+}
+td.wasVisited {
+  background-color: #f1e4b3 !important;
+}
+.container {
+  display: flex;
+}
+.containerSettings {
+  margin-left: 20px;
+}
