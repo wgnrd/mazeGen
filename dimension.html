@@ -5,17 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css" />
   <link rel="stylesheet" href="styles.css">
 
-  <title>Mazegen</title>
+  <title>3d Mazegen</title>
 </head>
 
 <body>
   <div class="container">
-    <table id="maze">
-    </table>
-
+    <table id="mazeL1" style="margin-right: 10px"></table>
+    <table id="mazeL2" style="margin-right: 10px"></table>
+    <table id="mazeL3"></table>
   </div>
   <div class="container">
     <div class="containerSettings">
@@ -24,7 +26,7 @@
         <div class="ui label">
           GridSize:
         </div>
-        <input type="number" name="size" id="gridSize" value="20">
+        <input type="number" name="size" id="gridSize" value="10">
       </div>
       <div class="ui labeled input">
         <div class="ui label">
@@ -34,11 +36,11 @@
       </div>
       <div>
         <input type="button" class="ui button" value="Refresh" onclick="onRefresh()">
-        <a href="./dimension.html" class="ui button">3d</a>
+        <a href="./index.html" class="ui button">2d</a>
       </div>
     </div>
   </div>
-  <script src="./app.js"></script>
+  <script src="./dimension.js"></script>
 
 </body>
 

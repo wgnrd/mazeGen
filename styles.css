@@ -1,23 +1,58 @@
-body {
-  font-family: 'Roboto', sans-serif;
-}
+
 td {
   border: 1px solid #ec9770;
   padding: 10px;
   background-color: #15959f;
 }
+.fas {
+  display:table-cell;
+}
+td.fas {
+  padding: 4px 5px;
+  color: #133046;
+}
 table {
   border-spacing: 0px;
 }
 td.currentCell {
-  background-color: #133046;
+  background-color: #133046 !important;
 }
 td.wasVisited {
-  background-color: #f1e4b3 !important;
+  background-color: #f1e4b3;
+}
+td.fas.fa-caret-up.fa-caret-down::before {
+  content: "\f079";
+}
+td.fas.fa-caret-up.fa-caret-down {
+  padding: 4px 2px !important;
+}
+
+
+
+
+td.wasVisited.noUpBorder {
+  background-color: fuchsia;
+}
+td.wasVisited.noDownBorder {
+  background-color: aqua;
+}
+td.wasVisited.noUpBorder.noDownBorder {
+  background-color: crimson;
 }
 .container {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .containerSettings {
-  margin-left: 20px;
+  margin-top: 2em;
+  width: 40%;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ui.input {
+  margin-bottom: 10px;
 }
