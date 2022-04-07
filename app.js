@@ -43,7 +43,7 @@ const cellHasNeighbours = ({ x, y }) => {
   return neighbours;
 };
 
-//TODO
+
 const chooseNeighbour = ({ x, y }) => {
   let chosenCell = [];
   if (x > 0 && !cellStack[x - 1][y].isVisited) {
